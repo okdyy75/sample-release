@@ -1,4 +1,4 @@
-## GitHubのリリース機能の使い方
+## GitHubのリリース機能とは
 簡単に説明するとライブラリやソフトウェアのリリースをGitHub上で管理できる機能です。
 
 ### Release作成の流れ
@@ -16,14 +16,16 @@
 <img src="./images/releases_add.png" alt="releases_add" title="Add Release">
 
 ## Release作成ページ解説
-基本的にはタグの指定さえあれば作成可能です。ちなみにこの画面上からタグも作成できます。
+基本的にはタグの指定さえあれば作成可能です。ちなみにこの画面上からもタグを作成できます。
 
 <img src="./images/create_new_release.png" alt="create_new_release" title="Create new Release">
 
 ### Choose a tag
-Release作成時のタグを指定します。ここから新しくタグの作成も可能です。
+Release作成時のタグを指定します。
 
-新しくタグを作成する場合は「Choose a tag」にタグ名を入力し「Create new tag」を選択。作成元となるブランチorコミットを指定します（ReleaseをPublishしたタイミングではじめてタグが作成されます）
+新しくタグを作成する場合は「Choose a tag」にタグ名を入力し「Create new tag」を選択。作成元となるブランチorコミットを指定します。
+
+ReleaseをPublishしたタイミングではじめてタグが作成されますが、Save Draft→Publishの場合は、すでにタグが存在すればそれを使用し、なければDraft時に設定したタグが新しく作成されます。
 
 <img src="./images/create_new_tag.png" alt="create_new_tag" title="Create a new Tag" width="60%">
 
@@ -52,9 +54,6 @@ latestのチェックは最新のReleaseに対してLatestのラベルをつけ�
 
 ### Publish release と Save draft
 基本的にPublishをするとReleaseが作成＆公開されますが、公開する前に下書きを作成することも可能です。
-
-Draft時に「Choose a tag」でタグ名を指定しておくと、Publishしたタイミングでタグが作成できるのもポイントです
-
 
 <img src="./images/publish_release_save_draft.png" alt="publish_release_save_draft" title="Publish Release and Draft Release" width="60%">
 
